@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="ru">
+	<head>
+		<title>Генератор паролей</title>
+		<link rel="stylesheet" href="source/css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width">
+		<!--Favicon-->
+		<link rel="shortcut icon" href="favicon.ico">
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--Container-->
+		<div class="container">
+			<!--Generator-->
+			<div class="gen">
+			<!--Title-->
+				<div class="gen__title">
+					Генератор паролей
+				</div>
+				<!--Textarea-->
+				<div class="gen__window">
+					<input tabindex="1" class="gen__textArea" type="text" name="result" readonly/>
+					<div class="gen__copyButton"><img class="gen__copyImg" src="img/copy_icon.png" alt="" title="Скопировать" /></div>
+				</div>
+				<!--Options-->
+				<div class="gen__form">
+					<div class="gen__option">
+						<p>Длина пароля (4-25):</p>
+						<input class="gen__number" type="number" name="length" min="4" max="25" value="8" tabindex="2" />
+					</div>
+					<div class="gen__option">
+						<p>Заглавные буквы:</p>
+						<input class="gen__check" type="checkbox" name="uppercase" style="transform: scale(1.5);" tabindex="3" />
+					</div>
+					<div class="gen__option">
+						<p>Строчные буквы:</p>
+						<input class="gen__check" type="checkbox" name="lowercase" style="transform: scale(1.5);" tabindex="4" />
+					</div>
+					<div class="gen__option">
+						<p>Цифры:</p>
+						<input class="gen__check" type="checkbox" name="numbers" style="transform: scale(1.5);" tabindex="5" />
+					</div>
+					<div class="gen__option">
+						<p>Символы:</p>
+						<input class="gen__check" type="checkbox" name="symbols" style="transform: scale(1.5);" tabindex="6"/>
+					</div>
+					<!--SubmitButton-->
+					<button tabindex="7" class="gen__submit" type="submit" value="submit">Сгенерировать</button>
+				</div>
+			</div>
+		</div>
+		<script src="source/js/script.js"></script>
+	</body>
+</html>
