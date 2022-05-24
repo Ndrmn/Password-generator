@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: #f8b195;
   background: -webkit-gradient(linear, left top, left bottom, from(#f8b195), color-stop(52%, #c06c84), to(#355c7d));
-  background: linear-gradient(180deg, #f8b195 0%, #c06c84 52%, #355c7d 100%);
+  background: linear-gradient(180deg, #f8b195 0%, #c06c84 52%, #355c7d 100%) fixed;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8b195",endColorstr="#355c7d",GradientType=1);
   text-transform: uppercase;
   font-family: "Play", sans-serif;
