@@ -117,6 +117,7 @@ body {
   text-align: center;
   color: black;
   font-size: 18px;
+  border-radius: 0px;
 }
 
 .gen__copyButton {
@@ -176,6 +177,9 @@ body {
   height: 32px;
   width: 100%;
   font-size: 20px;
+  color: black;
+	background-color: white;
+	border-radius: 0px;
 }
 
 .gen__submit:active {
