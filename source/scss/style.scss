@@ -1,0 +1,163 @@
+// Nullstyle
+@import "nullstyle.scss";
+
+//Background
+body{
+	background: rgb(248,177,149);
+	background: -moz-linear-gradient(180deg, rgba(248,177,149,1) 0%, rgba(192,108,132,1) 52%, rgba(53,92,125,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(248,177,149,1) 0%, rgba(192,108,132,1) 52%, rgba(53,92,125,1) 100%);
+	background: linear-gradient(180deg, rgba(248,177,149,1) 0%, rgba(192,108,132,1) 52%, rgba(53,92,125,1) 100%) fixed;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8b195",endColorstr="#355c7d",GradientType=1);
+	text-transform: uppercase;
+	font-family: 'Play', sans-serif;
+	color: white;
+}
+.container{
+	padding: 50px 10px 10px;
+}
+.gen{
+	background-color: #c06c84;
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 20px;   
+	box-shadow: 1px 1px 5px 1px #444;
+}
+.gen__title {
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.gen__window {
+	height: 32px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.gen__textArea {
+	height: 32px;
+ 	width: 100%;
+ 	text-align: center;
+ 	color: black;
+ 	font-size: 18px;
+ 	border-radius: 0px;
+}
+.gen__copyButton {
+	height: 32px;
+	width: 32px;
+	border-radius: 0px;
+	background: white url('../../img/copy_icon.png') 0 0/21px 21px no-repeat;
+	background-position: 50% 50%;
+}
+.gen__copyButton:active {
+	background: white url('../../img/copy_icon.png') 0 0/19px 19px no-repeat;
+	background-position: 50% 50%;	
+}
+.gen__option {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+}
+.gen__option p{
+	margin-right: 10px;
+	font-size: 24px;
+}
+.gen__number{
+	font-size: 18px;
+	padding: 0 3px;
+	-webkit-inner-spin-button { 
+  opacity: 1;
+}
+}
+.gen__check {
+	margin: 6px 1px 0px 0px;
+}
+.gen__submit {
+	margin-top: 5px;
+	height: 32px;
+	width: 100%;
+	font-size: 20px;
+	color: black;
+	background-color: white;
+	border-radius: 0px;
+}
+.gen__submit:active {
+	color: gray;
+}
+
+.gen__snackbar {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	opacity: 0.75;
+	text-align: center;
+	padding: 8px;
+	position: fixed;
+	left: 50%;
+	bottom: 10%;
+	margin-left: -75px;
+	width: 150px;
+	display: none;
+}
+
+@media (max-width: 392px) {
+	.container{
+		padding: 50px 5px 10px;
+	}
+	.gen{
+		padding: 10px;   
+	}
+	.gen__title {
+		font-size: 27px;
+	}
+	.gen__textArea {
+ 		font-size: 16px;
+	}
+	.gen__number {
+		font-size: 16px;
+	}
+	.gen__option p {
+		font-size: 18px;
+	}
+	.gen__submit {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 220px) {
+	.container{
+		padding: 50px 5px 10px;
+	}
+	.gen{
+		padding: 5px;   
+	}
+	.gen__title {
+		font-size: 24px;
+	}
+	.gen__textArea {
+ 		font-size: 14px;
+	}
+	.gen__number {
+		font-size: 14px;
+	}
+	.gen__option p {
+		font-size: 16px;
+	}
+	.gen__submit {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 189px) {
+	.gen__title {
+		font-size: 18px;
+	}
+	.gen__number {
+		font-size: 12px;
+	}
+	.gen__option p {
+		font-size: 14px;
+	}
+	.gen__submit {
+		font-size: 14px;
+	}
+}
