@@ -42,7 +42,7 @@ const btn = document.querySelector('.gen__submit');
 btn.addEventListener("click", function() {
 	var checkboxes = document.querySelectorAll('.gen__check');
 	var string = [];
-	var stringNew;
+	var stringNew = "";
 
 	for (i=0; i<checkboxes.length; i++) {
 		if (checkboxes[i].checked == true) {
